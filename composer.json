@@ -1,0 +1,16 @@
+{
+    "name": "elgla/i-portfolio",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Elgla\\IPortfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohamed",
+            "email": "msa0back@gmail.com"
+        }
+    ],
+    "require": {}
+}
