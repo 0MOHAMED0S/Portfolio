@@ -13,7 +13,9 @@
   <link href="assets/img/alphabet.png" rel="icon">
   <link href="assets/img/alphabet.png" rel="apple-touch-icon">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -32,6 +34,17 @@
 
 <body>
 
+  <!-- ======= Preloader ======= -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="spinner-wrapper">
+        <div class="spinner"></div>
+        <span class="loader-king">?</span>
+      </div>
+      <span class="loader-text">MSA</span>
+    </div>
+  </div>
+
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -40,159 +53,126 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/msa3.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Mohamed Sayed</a></h1>
+        <div class="profile-img-wrapper">
+          <img src="assets/img/msa3.jpeg" alt="" class="img-fluid rounded-circle">
+        </div>
+        <h1 class="text-light"><a href="index.html">MOHAMED SAYED</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://github.com/0MOHAMED0S" target="_blank" class="twitter"><i class="bi bi-github"></i></a>
-          <a href="https://web.facebook.com/profile.php?id=100042720670770" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="https://wa.me/+201110562097" target="_blank" class="instagram"><i class="bi bi-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/mohamed-sayed-back-end0" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="./assets/MSA.pdf"  class="linkedin" target="_blank">cv</a>
+          <a href="https://www.linkedin.com/in/mohamed-sayed-back-end0" class="linkedin" target="_blank"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="./assets/Mohamed_Sayed_CV.pdf" class="linkedin" target="_blank">cv</a>
         </div>
       </div>
 
-      <nav id="navbar" class="nav-menu navbar">
+            <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="./index.html" class="nav-link scrollto "><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a  class="nav-link scrollto active"><i class="bi bi-file-ruled"></i> <span>HTI GRADES Details</span></a></li>
+          <li><a href="index.html#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#skills" class="nav-link scrollto"><i class="bi bi-stars"></i> <span>skills</span></a></li>
+          <li><a href="index.html#Projects" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>HTI GRADES Details</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li> HTI GRADES Details</li>
-          </ol>
+    <main id="main" class="pt-5 pb-5">
+    <div class="container pt-5 pb-4">
+      
+      <!-- Header Section -->
+      <div class="mb-5" data-aos="fade-down">
+        <!-- Back Button -->
+        <div class="d-flex mb-4">
+          <a href="index.html#Projects" class="btn btn-dark border border-secondary rounded-circle d-flex align-items-center justify-content-center shadow-sm transition-all hover-scale" style="width: 45px; height: 45px; background: rgba(255,255,255,0.03);" title="Back to Projects">
+            <i class="bi bi-arrow-left fs-4" style="color: #a855f7;"></i>
+          </a>
         </div>
-
+        <div class="text-center">
+          <span class="badge rounded-pill bg-dark border border-secondary px-4 py-2 mb-4 shadow-sm text-uppercase tracking-wider" style="color:#a855f7; font-size: 11px; font-weight: 800; letter-spacing: 2px;">Project</span>
+        <h1 class="display-3 fw-bold text-white mb-3" style="font-family: 'Outfit', sans-serif; letter-spacing: -1px;">HTI GRADES</h1>
+        <p class="lead text-light opacity-75 mx-auto" style="max-width: 650px; font-size: 1.15rem; line-height: 1.6;">Create a dynamic website  to show college students' grades  by enter the code Without Refresh The Page.</p>
+        </div>
       </div>
-    </section><!-- End Breadcrumbs -->
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-10">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/HTI/1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/HTI/2.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/HTI/3.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/HTI/4.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/HTI/5.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/HTI/6.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/HTI/7.png" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+  
+      <div class="bento-grid">
+        
+        
+  
+        <!-- Tech Stack & Links (Span 6) -->
+        <div class="bento-item col-span-6 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <div class="bento-icon-box">
+              <i class="bi bi-stack"></i>
             </div>
-            <div class="portfolio-description">
-              <h2>About Broject</h2>
-              <p>
-                Create a dynamic website  to show college students' grades  by enter the code Without Refresh The Page.
-              </p>
+          </div>
+          
+          <h3 class="text-white fw-bold mb-4" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.5px;">Tech Stack</h3>
+          
+          <div class="d-flex flex-wrap gap-2 mb-auto">
+            <span class="badge bg-dark border border-secondary px-3 py-2 rounded-3 shadow-sm fs-6" style="background: rgba(255,255,255,0.05) !important;">PHP</span>
+            <span class="badge bg-dark border border-secondary px-3 py-2 rounded-3 shadow-sm fs-6" style="background: rgba(255,255,255,0.05) !important;">LARAVEL</span>
+            <span class="badge bg-dark border border-secondary px-3 py-2 rounded-3 shadow-sm fs-6" style="background: rgba(255,255,255,0.05) !important;">lIVEWIRE</span>
+            <span class="badge bg-dark border border-secondary px-3 py-2 rounded-3 shadow-sm fs-6" style="background: rgba(255,255,255,0.05) !important;">MYSQL</span>
+          </div>
+          
+          <div class="mt-5">
+            <h6 class="text-uppercase mb-3 text-light opacity-50" style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px;">Project Links</h6>
+            <div class="d-flex flex-column gap-3">
+              <a href="https://www.linkedin.com/in/mohamed-sayed-back-end0" target="_blank" class="btn btn-primary rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center shadow-lg w-100 cta-btn" style="background: linear-gradient(135deg, #a855f7, #6b21a8); border: none; font-family: 'Outfit', sans-serif; font-size: 16px;">
+                <i class="bi bi-globe me-2 fs-5"></i> View Live Demo
+              </a>
+              <a href="https://github.com/0MOHAMED0S" target="_blank" class="btn btn-dark border border-secondary rounded-4 py-3 fw-bold d-flex align-items-center justify-content-center w-100 cta-btn" style="background: rgba(255,255,255,0.03); font-family: 'Outfit', sans-serif; font-size: 16px;">
+                <i class="bi bi-github me-2 fs-5"></i> Source Code
+              </a>
             </div>
-            <div class="portfolio-info">
-              <h3>Technology Used</h3>
-              <ul>
-                <li><strong>PHP</strong></li>
-                <li><strong>LARAVEL</strong></li>
-                <li><strong>lIVEWIRE</strong></li>
-                <li><strong>MYSQL</strong></li>
-                <!-- <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
-              </ul>
+          </div>
+        </div>
+  
+        <!-- Core Features (Span 6) -->
+        <div class="bento-item col-span-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="bento-icon-box" style="color: #3b82f6; border-color: rgba(59, 130, 246, 0.3); background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), transparent);">
+            <i class="bi bi-speedometer2"></i>
+          </div>
+          <h3 class="text-white fw-bold mb-4" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.5px;">Features</h3>
+          <ul class="list-unstyled text-light opacity-75 m-0" style="font-size: 1.05rem; display: flex; flex-direction: column; gap: 15px;">
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle me-3 mt-1 fs-5" style="color: #3b82f6;"></i><span style="break-inside: avoid;">ADMIN Easy Can Add, edit, delete grades of college students by entering the student code Without Refresh The Page</span></li>
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle me-3 mt-1 fs-5" style="color: #3b82f6;"></i><span style="break-inside: avoid;">STUDENT can easily see his grades by entering the code Without Refresh The Page</span></li>
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle me-3 mt-1 fs-5" style="color: #3b82f6;"></i><span style="break-inside: avoid;">The result can be withheld</span></li>
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle me-3 mt-1 fs-5" style="color: #3b82f6;"></i><span style="break-inside: avoid;">Login</span></li>
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle me-3 mt-1 fs-5" style="color: #3b82f6;"></i><span style="break-inside: avoid;">Register</span></li>
+            <li class="mb-3 d-flex align-items-start"><i class="bi bi-check2-circle me-3 mt-1 fs-5" style="color: #3b82f6;"></i><span style="break-inside: avoid;">The result can be withheld</span></li>
+          </ul>
+        </div>
+  
+        <!-- Gallery (Span 12) -->
+        <div class="bento-item col-span-12 p-4 p-md-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-5">
+            <div>
+              <h3 class="text-white fw-bold mb-2" style="font-family: 'Outfit', sans-serif; letter-spacing: -0.5px;">Project Gallery</h3>
+              <p class="text-light opacity-50 m-0">A deep dive into the interface and features.</p>
             </div>
-            <div class="portfolio-info">
-              <h3>Features   </h3>
-              <ul>
-                <br>
-                <li><i class="bi bi-check2-all"> </i><strong>  ADMIN Easy Can Add, edit, delete grades of college students by entering the student code Without Refresh The Page</strong></li>
-                <li><i class="bi bi-check2-all"> </i><strong>  STUDENT can easily see his grades by entering the code Without Refresh The Page</strong></li>
-                <li><i class="bi bi-check2-all"> </i><strong>  The result can be withheld</strong></li>
-                <li><i class="bi bi-check2-all"> </i><strong>  Login</strong></li>
-                <li><i class="bi bi-check2-all"> </i><strong>  Register</strong></li>
-                <li><i class="bi bi-check2-all"> </i><strong>  The result can be withheld</strong></li>
-                <br>
-
-                <center>
-                  <a href="https://github.com/0MOHAMED0S/HTI-GRADES" target="_blank" class="cta">
-                    <span><i id="github" class="bi bi-github"> </i>  SOURCE COODE</span>
-                    <svg width="15px" height="10px" viewBox="0 0 13 10">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </center>
-
-              </ul>
-            </div>
-            <br>
-            <br>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/1.png" class="img-fluid" alt="Image 1">
-    </div>
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/2.png" class="img-fluid" alt="Image 2">
-    </div>
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/3.png" class="img-fluid" alt="Image 2">
-    </div>
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/4.png" class="img-fluid" alt="Image 2">
-    </div>
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/5.png" class="img-fluid" alt="Image 2">
-    </div>
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/1.png" class="img-fluid" alt="Image 1">
-    </div>
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/66.png" class="img-fluid" alt="Image 2">
-    </div>
-    <div class="col-sm-6">
-      <img src="assets/img/projects/HTI/77.png" class="img-fluid" alt="Image 2">
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-
+            <span class="badge border border-secondary px-4 py-2 rounded-pill shadow-sm mt-3 mt-md-0" style="background: rgba(255,255,255,0.05); font-size: 13px;">9 Screenshots</span>
+          </div>
+          
+          <div class="row g-4">
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/1.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/2.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/2.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/3.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/3.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/4.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/4.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/5.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/5.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/6.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/6.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/7.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/7.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/66.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/66.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+            <div class="col-md-4 col-sm-6"><a href="assets/img/projects/HTI/77.png" data-gallery="portfolioGallery" class="portfolio-lightbox d-block"><img src="assets/img/projects/HTI/77.png" class="img-fluid rounded-4 border border-light border-opacity-10 screenshot-grid-img w-100 object-fit-cover" alt="Project Screenshot"></a></div>
+          </div>
+        </div>
+  
       </div>
-    </section><!-- End Portfolio Details Section -->
-
-  </main><!-- End #main -->
+    </div>
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
