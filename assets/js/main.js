@@ -330,12 +330,18 @@
    */
   let preloader = select('#preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
+    const hidePreloader = () => {
       preloader.classList.add('loaded');
       setTimeout(() => {
-        preloader.remove();
+        if (preloader.parentNode) preloader.remove();
       }, 500);
-    });
+    };
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', hidePreloader);
+    } else {
+      setTimeout(hidePreloader, 50);
+    }
   }
 
 })();
